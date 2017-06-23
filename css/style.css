@@ -213,8 +213,9 @@ a:hover.menu-text {
 }
 
 p.reference {
-padding-left: 2em;
-text-indent: -2em;
+	margin-left: 38px;
+	padding-left: 2em;
+	text-indent: -2em;
 }
 
 .skills-container {
@@ -222,18 +223,41 @@ text-indent: -2em;
 	display: -webkit-flex;
 	flex-direction: column;
 	-webkit-flex-direction: column;
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 10px;
 	flex-grow: 1;
 }
 
-#pages .skills {
+.reference a {
+	color: black;
+	text-decoration: underline;
+}
+
+.reference a:hover {
+  	color: rgba(85,85,85,1);
+}
+
+.grant-title {
+  	font-size: 20px;
+  	margin-top: 0;
+  	margin-bottom: 0;
+  	font-weight: bold;
+  	margin-left: 38px;
+}
+
+.grant-company {
+  margin-bottom: 10px;
+  color: #7a8aa0;
+  margin-left: 38px;
+}
+
+.skills {
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-#pages .skill {
+.skill {
 	display: flex;
 	display: -webkit-flex;
 	flex-grow: 1;
