@@ -9,10 +9,21 @@ body {
 	display: -webkit-flex;
 	flex-direction: column;
 	-webkit-flex-direction: column;
-	font-family:"sans-serif";
+	font-family: "Open Sans", sans-serif;
+	text-align: justify;
+    text-justify: inter-word;
 	align-items: center;
 	-webkit-align-items: center;
 	margin: 0;
+}
+
+body a {
+	color: black;
+	text-decoration: underline;
+}
+
+body a:hover {
+  	color: rgba(85,85,85,1);
 }
 
 .wrapper{
@@ -47,11 +58,14 @@ header {
 	font-weight: 100;
 	letter-spacing: 2px;
 	font-size: 40px;
+	font-family: "Roboto", sans-serif;
 }
 
 .name-container h4 {
 	font-weight: 500;
 	letter-spacing: 1px;
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
 }
 
 .profile-container {
@@ -71,6 +85,8 @@ header {
 	justify-content: center;
 	font-size: 17px;
 	margin-top: 10px;
+	margin-right: 10px;
+	font-family: "Roboto", sans-serif;
 }
 
 .social-container a {
@@ -117,12 +133,10 @@ section {
 
 .summ-box {
 	padding: 20px;
-	text-align: center;
 }
 
 .experience-box {
 	margin: 20px auto;
-	text-align: left;
 }
 
 .section-title {
@@ -132,6 +146,7 @@ section {
   color: #2d7788;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .item {
@@ -149,6 +164,7 @@ section {
   	margin-top: 0;
   	margin-bottom: 0;
   	font-weight: bold;
+  	font-family: "Roboto", sans-serif;
 }
 
 .time {
@@ -156,16 +172,17 @@ section {
   	right: 0;
   	top: 0;
   	color: #7a8aa0;
+  	font-family: "Roboto", sans-serif;
 }
 
 .company {
   margin-bottom: 10px;
   color: #7a8aa0;
+  font-family: "Roboto", sans-serif;
 }
 
 .education-box {
 	margin: 20px auto;
-	text-align: left;
 }
 
 .portfolio-container{
@@ -173,17 +190,16 @@ section {
 	display: -webkit-flex;
 	flex-direction: column;
 	-webkit-flex-direction: column;
-
 }
 
 .portfolio-title {
 	text-transform: uppercase;
-   font-size: 20px;
+   	font-size: 20px;
   	font-weight: 2;
   	color: #2d7788;
-  	margin-top: 20px;
-  	margin-bottom: 20px;
-	margin-left: 38px;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+	font-family: "Roboto", sans-serif;
 }
 
 #menu-picker {
@@ -201,6 +217,7 @@ section {
   	margin-top: 20px;
   	margin-bottom: 20px;
 	text-decoration: none;
+	font-family: "Roboto", sans-serif;
 }
 
 a:hover.menu-text {
@@ -208,8 +225,8 @@ a:hover.menu-text {
 }
 
 p.reference {
-padding-left: 2em;
-text-indent: -2em;
+	padding-left: 2em;
+	text-indent: -2em;
 }
 
 .skills-container {
@@ -217,31 +234,62 @@ text-indent: -2em;
 	display: -webkit-flex;
 	flex-direction: column;
 	-webkit-flex-direction: column;
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 10px;
 	flex-grow: 1;
+	margin-bottom: 10px;
 }
 
-#pages .skills {
+.reference a {
+	color: black;
+	text-decoration: underline;
+}
+
+.reference a:hover {
+  	color: rgba(85,85,85,1);
+}
+
+.grant-title {
+  	font-size: 20px;
+  	margin-top: 0;
+  	margin-bottom: 0;
+  	font-weight: bold;
+  	font-family: "Roboto", sans-serif;
+}
+
+.grant-company {
+	margin-bottom: 10px;
+	color: #7a8aa0;
+	font-family: "Roboto", sans-serif;
+}
+
+.skills {
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
+	text-align: left;
 }
 
-#pages .skill {
+.skill {
+	display: flex;
+	display: -webkit-flex;
 	flex-grow: 1;
 	width: 50%;
 }
 
+.text, .stars, .mastery{
+	flex: 1 1 0
+}
+
 .skills .fa {
-  margin-right: 7.5px;
-  margin-left: 7.5px;
-  font-size: 20px;
-  vertical-align: middle;
+	margin-right: 7.5px;
+	margin-left: 7.5px;
+	font-size: 20px;
+	vertical-align: middle;
 }
 
 .skills li {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .line-break{
