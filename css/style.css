@@ -236,6 +236,11 @@ p.reference {
 	text-indent: -2em;
 }
 
+.showcase-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .skills-container {
 	display: flex;
 	display: -webkit-flex;
