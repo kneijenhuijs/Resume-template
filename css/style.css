@@ -197,15 +197,9 @@ section {
    	font-size: 20px;
   	font-weight: 2;
   	color: #2d7788;
-  	margin-top: 20px;
-  	margin-bottom: 20px;
-	margin-left: 38px;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
 	font-family: "Roboto", sans-serif;
-}
-
-.portfolio-text{
-	margin-left: 38px;
-	margin-right: 38px;
 }
 
 #menu-picker {
@@ -231,7 +225,6 @@ a:hover.menu-text {
 }
 
 p.reference {
-	margin-left: 38px;
 	padding-left: 2em;
 	text-indent: -2em;
 }
@@ -244,6 +237,7 @@ p.reference {
 	font-size: 18px;
 	margin-top: 10px;
 	flex-grow: 1;
+	margin-bottom: 10px;
 }
 
 .reference a {
@@ -260,15 +254,13 @@ p.reference {
   	margin-top: 0;
   	margin-bottom: 0;
   	font-weight: bold;
-  	margin-left: 38px;
   	font-family: "Roboto", sans-serif;
 }
 
 .grant-company {
-  margin-bottom: 10px;
-  color: #7a8aa0;
-  margin-left: 38px;
-  font-family: "Roboto", sans-serif;
+	margin-bottom: 10px;
+	color: #7a8aa0;
+	font-family: "Roboto", sans-serif;
 }
 
 .skills {
@@ -290,14 +282,14 @@ p.reference {
 }
 
 .skills .fa {
-  margin-right: 7.5px;
-  margin-left: 7.5px;
-  font-size: 20px;
-  vertical-align: middle;
+	margin-right: 7.5px;
+	margin-left: 7.5px;
+	font-size: 20px;
+	vertical-align: middle;
 }
 
 .skills li {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .line-break{
