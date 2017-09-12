@@ -112,10 +112,17 @@ header {
   margin-bottom: 5px;
 }
 
-.portrait-pic {
-	border-radius: 50%;
-	height: 200px;
+.picture-container{
+	position: relative;
 	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.portrait-pic {
+	width: 100%;
+	height: auto;
 }
 
 main {
