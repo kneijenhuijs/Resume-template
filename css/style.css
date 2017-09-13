@@ -231,6 +231,10 @@ a:hover.menu-text {
 	color: #1a454f;
 }
 
+a.currentlyActive {
+	text-decoration: underline;
+}
+
 p.reference {
 	padding-left: 2em;
 	text-indent: -2em;
