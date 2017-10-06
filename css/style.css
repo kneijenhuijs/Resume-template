@@ -102,6 +102,10 @@ header {
 	list-style-type: none;
 }
 
+.contacttext {
+	display: inline;
+}
+
 .contact-list .fa {
   margin-right: 10px;
   font-size: 20px;
@@ -165,6 +169,9 @@ section {
   overflow: hidden;
   margin-bottom: 2px;
 }
+.rwd-line {
+	display: block;
+}
 
 .job-title {
   	font-size: 20px;
@@ -178,6 +185,12 @@ section {
   	position: absolute;
   	right: 0;
   	top: 0;
+  	color: #7a8aa0;
+  	font-family: "Roboto", sans-serif;
+}
+
+.timeMobile {
+	display: none;
   	color: #7a8aa0;
   	font-family: "Roboto", sans-serif;
 }
@@ -334,4 +347,76 @@ p.reference {
 p {
 	font-weight: 200;
 	letter-spacing: 1px;
+}
+
+/* Everything too small for skills: Change to one column ----------- */
+@media only screen and (max-device-width : 1000px) {
+
+	.skills {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	.skill {
+		width: 100%;
+	}
+
+}
+
+/* Everything too small for header ----------- */
+@media only screen and (max-device-width : 858px) {
+	header {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	}
+
+	.contacttext {
+		display:none;
+	}
+}
+
+/* Everything too small for one column skills: Remove stars ----------- */
+@media only screen and (max-device-width : 710px) {
+
+	.stars {
+		display: none;
+	}
+
+	.mastery {
+		font-style: italic;
+	}
+
+}
+
+/* Everything too small for time to position correctly ----------- */
+@media only screen and (max-device-width : 625px) {
+	header {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	}
+
+	.contacttext {
+		display:none;
+	}
+
+	.company {
+  		margin-bottom: 0px;
+ 	}
+
+ 	.timeMobile {
+		display: inline;
+	}
+
+	.time {
+		display: none;
+	}
+}
+
+/* Everything too small for menu-picker ----------- */
+@media only screen and (max-device-width : 480px) {
+
+	#menu-picker {
+		flex-direction: column;
+	    -webkit-flex-direction: column;
+	}
 }
