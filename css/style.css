@@ -361,7 +361,19 @@ p {
 	.skill {
 		width: 100%;
 	}
+}
 
+/* Desktop version ----------- */
+@media only screen and (max-width : 1000px) {
+
+	.skills {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	.skill {
+		width: 100%;
+	}
 }
 
 /* Everything too small for header ----------- */
@@ -370,9 +382,16 @@ p {
 	flex-direction: column;
 	-webkit-flex-direction: column;
 	}
-
-
 }
+
+/* Desktop version ----------- */
+@media only screen and (max-width : 885px) {
+	header {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	}
+}
+
 
 /* Everything too small for one column skills: Remove mastery ----------- */
 @media only screen and (max-device-width : 710px) {
@@ -381,8 +400,39 @@ p {
 	}
 }
 
+/* Desktop version ----------- */
+@media only screen and (max-width : 710px) {
+	.mastery {
+		display: none;
+	}
+}
+
 /* Everything too small for time to position correctly and for contacttext ----------- */
 @media only screen and (max-device-width : 635px) {
+	header {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	}
+
+	.contacttext {
+		display:none;
+	}
+
+	.company {
+  		margin-bottom: 0px;
+ 	}
+
+ 	.timeMobile {
+		display: inline;
+	}
+
+	.time {
+		display: none;
+	}
+}
+
+/* Desktop version ----------- */
+@media only screen and (max-width : 635px) {
 	header {
 	flex-direction: column;
 	-webkit-flex-direction: column;
@@ -417,8 +467,8 @@ p {
 	}
 }
 
-/* Everything too small for menu-picker and stars ----------- */
-@media only screen and (max-device-width : 480px) {
+/* Desktop version ----------- */
+@media only screen and (max-width : 480px) {
 	.skills .fa {
 	font-size: 16px;
 	}
@@ -431,6 +481,18 @@ p {
 
 /* Smallest possible phones ----------- */
 @media only screen and (max-device-width : 360px) {
+	.skills .fa {
+	font-size: 11px;
+	}
+
+	.skill {
+	font-size: 14px;
+	font-weight: bold;
+	}
+}
+
+/* Desktop version ----------- */
+@media only screen and (max-width : 360px) {
 	.skills .fa {
 	font-size: 11px;
 	}
