@@ -364,32 +364,24 @@ p {
 }
 
 /* Everything too small for header ----------- */
-@media only screen and (max-device-width : 858px) {
+@media only screen and (max-device-width : 885px) {
 	header {
 	flex-direction: column;
 	-webkit-flex-direction: column;
 	}
 
-	.contacttext {
-		display:none;
-	}
+
 }
 
-/* Everything too small for one column skills: Remove stars ----------- */
+/* Everything too small for one column skills: Remove mastery ----------- */
 @media only screen and (max-device-width : 710px) {
-
-	.stars {
+	.mastery {
 		display: none;
 	}
-
-	.mastery {
-		font-style: italic;
-	}
-
 }
 
-/* Everything too small for time to position correctly ----------- */
-@media only screen and (max-device-width : 625px) {
+/* Everything too small for time to position correctly and for contacttext ----------- */
+@media only screen and (max-device-width : 635px) {
 	header {
 	flex-direction: column;
 	-webkit-flex-direction: column;
@@ -412,8 +404,11 @@ p {
 	}
 }
 
-/* Everything too small for menu-picker ----------- */
+/* Everything too small for menu-picker and stars ----------- */
 @media only screen and (max-device-width : 480px) {
+	.stars i {
+		font-size: 75%px;
+	}
 
 	#menu-picker {
 		flex-direction: column;
